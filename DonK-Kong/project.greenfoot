@@ -1,10 +1,10 @@
 #Greenfoot project file
 class.MyWorld.image=\u80CC\u666F.jpg
 class.Player.image=\u30B5\u30A4\u30D0\u30FC\u914D\u7BA1\u5DE5(\u2642).png
-editor.fx.0.height=739
-editor.fx.0.width=816
-editor.fx.0.x=85
-editor.fx.0.y=131
+editor.fx.0.height=0
+editor.fx.0.width=0
+editor.fx.0.x=0
+editor.fx.0.y=0
 height=985
 package.numDependencies=0
 package.numTargets=2
