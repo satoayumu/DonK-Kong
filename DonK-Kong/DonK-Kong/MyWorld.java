@@ -19,5 +19,3 @@ public class MyWorld extends World
         super(1200, 800, 1); 
     }
 }
-
-
