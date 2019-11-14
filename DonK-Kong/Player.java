@@ -27,7 +27,18 @@ public class Player extends Actor
         int x = getX();
         int y = getY();
         
+        Actor throuwn = getOneObjectAtOffset( 0, 0, Thrown_object.class );
+        
         int position[] = {x , y};
+        
+        if(throuwn != null){
+            String name = throuwn.getClass().getName();
+            getWorld().showText( name, 100, 50 );
+            if(name == "Apple"){
+            }
+            if(name == "Poison_Apple"){
+            }
+        }
         
         upVec++;
         if( Greenfoot.isKeyDown( "up" ) && !jumped){
