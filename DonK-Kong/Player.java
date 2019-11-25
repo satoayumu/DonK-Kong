@@ -28,6 +28,7 @@ public class Player extends Actor
         int y = getY();
         
         Actor throuwn = getOneObjectAtOffset( 0, 0, Thrown_object.class );
+        Actor scaffold = getOneObjectAtOffset( 0, 0, Scaffold.class );
         
         int position[] = {x , y};
         
@@ -38,6 +39,14 @@ public class Player extends Actor
             }
             if(name == "Poison_Apple"){
             }
+        }
+        if(scaffold != null){
+            String name = scaffold.getClass().getName();
+            int yPos = scaffold.getY();
+            getWorld().showText( name, 100, 50 );
+            upVec = 0;
+            position[1] = yPos;
+            jumped = false;
         }
         
         upVec++;
