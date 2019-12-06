@@ -1,5 +1,6 @@
 #Greenfoot project file
 class.Apple.image=apple.png
+class.Captive.image=\u3086\u3081\u304B\u308F\u30AC\u30FC\u30EB.png
 class.MyWorld.image=background.jpg
 class.Player.image=sybermario(male).png
 class.Poison_apple.image=poisonapple.png
@@ -12,6 +13,7 @@ dependency1.type=UsesDependency
 dependency2.from=Player
 dependency2.to=Thrown_object
 dependency2.type=UsesDependency
+<<<<<<< HEAD
 dependency3.from=PlayerFoot
 dependency3.to=Scaffold
 dependency3.type=UsesDependency
@@ -21,6 +23,14 @@ editor.fx.0.x=552
 editor.fx.0.y=100
 height=985
 package.numDependencies=3
+=======
+editor.fx.0.height=0
+editor.fx.0.width=0
+editor.fx.0.x=0
+editor.fx.0.y=0
+height=985
+package.numDependencies=2
+>>>>>>> 8a43597aad3006fedb7e74bb6a117f1245776f72
 package.numTargets=8
 project.charset=UTF-8
 publish.hasSource=false
@@ -79,7 +89,11 @@ target6.width=80
 target6.x=0
 target6.y=0
 target7.height=50
+<<<<<<< HEAD
 target7.name=Thrown_object
+=======
+target7.name=Captive
+>>>>>>> 8a43597aad3006fedb7e74bb6a117f1245776f72
 target7.showInterface=false
 target7.type=ClassTarget
 target7.width=100
