@@ -1,24 +1,32 @@
 #Greenfoot project file
 class.Apple.image=apple.png
+<<<<<<< HEAD
 class.Captive.image=\u3086\u3081\u304B\u308F\u30AC\u30FC\u30EB.png
 class.Ladder.image=ladder.png
+=======
+class.Captive.image=yumekawagirl.png
+>>>>>>> ad513fd4fbb192c274b72588e9311fbc4fb80a6f
 class.MyWorld.image=background.jpg
 class.Player.image=sybermario(male).png
 class.Poison_apple.image=poisonapple.png
 class.Scaffold.image=Bricks\ .png
 class.Thrown_object.image=\u6BD2\u30EA\u30F3\u30B4.png
 class.gorilla.image=sybergorilla.png
-dependency1.from=Player
-dependency1.to=PlayerFoot
+dependency1.from=MyWorld
+dependency1.to=Scaffold
 dependency1.type=UsesDependency
 dependency2.from=Player
-dependency2.to=Thrown_object
+dependency2.to=PlayerFoot
 dependency2.type=UsesDependency
-dependency3.from=PlayerFoot
-dependency3.to=Scaffold
+dependency3.from=Player
+dependency3.to=Thrown_object
 dependency3.type=UsesDependency
 dependency4.from=PlayerFoot
+<<<<<<< HEAD
 dependency4.to=Ladder
+=======
+dependency4.to=Scaffold
+>>>>>>> ad513fd4fbb192c274b72588e9311fbc4fb80a6f
 dependency4.type=UsesDependency
 editor.fx.0.height=0
 editor.fx.0.width=0
@@ -26,7 +34,11 @@ editor.fx.0.x=0
 editor.fx.0.y=0
 height=985
 package.numDependencies=4
+<<<<<<< HEAD
 package.numTargets=10
+=======
+package.numTargets=9
+>>>>>>> ad513fd4fbb192c274b72588e9311fbc4fb80a6f
 project.charset=UTF-8
 publish.hasSource=false
 publish.locked=true
@@ -114,5 +126,5 @@ target9.y=0
 version=3.0.0
 width=1446
 world.lastInstantiated=MyWorld
-xPosition=321
-yPosition=16
+xPosition=326
+yPosition=60
