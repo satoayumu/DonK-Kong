@@ -20,21 +20,32 @@ public class PlayerFoot extends Actor
         int y = getY();
         
         Actor scaffold = getOneObjectAtOffset( 0, 0, Scaffold.class );
+        Actor ladder = getOneObjectAtOffset( 0, 0, Ladder.class );
         
         int position[] = {x , y};
         
-        if(scaffold != null){
-            int yPos = scaffold.getY();
-            upVec = 0;
-            position[1] = yPos;
-            jumped = false;
+        if(ladder != null){
+            if( Greenfoot.isKeyDown( "up" )){
+                position[1] -= 3;
+            }
+            if( Greenfoot.isKeyDown( "down" )){
+                position[1] += 3;
+            }
         }
-        upVec++;
-        if( Greenfoot.isKeyDown( "up" ) && !jumped){
-           upVec = -20;
-           jumped = true;
+        else{
+            if(scaffold != null){
+                int yPos = scaffold.getY();
+                upVec = 0;
+                position[1] = yPos;
+                jumped = false;
+            }
+            upVec++;
+            if( Greenfoot.isKeyDown( "up" ) && !jumped){
+               upVec = -20;
+               jumped = true;
+            }
+            position[1] += upVec;
         }
-        position[1] += upVec;
         if( Greenfoot.isKeyDown( "left" ) ){
            position[0] -= 3;
         }
