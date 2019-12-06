@@ -32,5 +32,7 @@ public class MyWorld extends World
          for(int i=0;i<13;i++){
             addObject( new Scaffold(), 100+ (i*73), 150 );
         }
+        addObject( new Player(), 150, 690 );
+        addObject( new PlayerFoot(), 150, 740 );
     }
 }

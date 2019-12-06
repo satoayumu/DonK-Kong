@@ -8,10 +8,6 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class PlayerFoot extends Actor
 {
-    /**
-     * Act - do whatever the Player_Foot wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
     int upVec = 0;
     boolean jumped = true;
     public void act() 
@@ -36,12 +32,12 @@ public class PlayerFoot extends Actor
             if(scaffold != null){
                 int yPos = scaffold.getY();
                 upVec = 0;
-                position[1] = yPos;
+                position[1] = yPos - 10;
                 jumped = false;
             }
             upVec++;
             if( Greenfoot.isKeyDown( "up" ) && !jumped){
-               upVec = -20;
+               upVec = -13;
                jumped = true;
             }
             position[1] += upVec;

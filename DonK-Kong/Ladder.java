@@ -10,7 +10,7 @@ public class Ladder extends Actor
 {
     public Ladder(){
         GreenfootImage image = getImage();
-        image.scale(image.getWidth()/2, image.getHeight()/2);
+        image.scale(image.getWidth()/2, (int)(image.getHeight()/1.8));
         setImage(image);
     }
     public void act() 

@@ -1,11 +1,7 @@
 #Greenfoot project file
 class.Apple.image=apple.png
-<<<<<<< HEAD
-class.Captive.image=\u3086\u3081\u304B\u308F\u30AC\u30FC\u30EB.png
-class.Ladder.image=ladder.png
-=======
 class.Captive.image=yumekawagirl.png
->>>>>>> ad513fd4fbb192c274b72588e9311fbc4fb80a6f
+class.Ladder.image=ladder.png
 class.MyWorld.image=background.jpg
 class.Player.image=sybermario(male).png
 class.Poison_apple.image=poisonapple.png
@@ -15,30 +11,31 @@ class.gorilla.image=sybergorilla.png
 dependency1.from=MyWorld
 dependency1.to=Scaffold
 dependency1.type=UsesDependency
-dependency2.from=Player
-dependency2.to=PlayerFoot
+dependency2.from=MyWorld
+dependency2.to=Player
 dependency2.type=UsesDependency
-dependency3.from=Player
-dependency3.to=Thrown_object
+dependency3.from=MyWorld
+dependency3.to=PlayerFoot
 dependency3.type=UsesDependency
-dependency4.from=PlayerFoot
-<<<<<<< HEAD
-dependency4.to=Ladder
-=======
-dependency4.to=Scaffold
->>>>>>> ad513fd4fbb192c274b72588e9311fbc4fb80a6f
+dependency4.from=Player
+dependency4.to=PlayerFoot
 dependency4.type=UsesDependency
-editor.fx.0.height=0
-editor.fx.0.width=0
-editor.fx.0.x=0
-editor.fx.0.y=0
+dependency5.from=Player
+dependency5.to=Thrown_object
+dependency5.type=UsesDependency
+dependency6.from=PlayerFoot
+dependency6.to=Scaffold
+dependency6.type=UsesDependency
+dependency7.from=PlayerFoot
+dependency7.to=Ladder
+dependency7.type=UsesDependency
+editor.fx.0.height=739
+editor.fx.0.width=816
+editor.fx.0.x=616
+editor.fx.0.y=188
 height=985
-package.numDependencies=4
-<<<<<<< HEAD
+package.numDependencies=7
 package.numTargets=10
-=======
-package.numTargets=9
->>>>>>> ad513fd4fbb192c274b72588e9311fbc4fb80a6f
 project.charset=UTF-8
 publish.hasSource=false
 publish.locked=true
