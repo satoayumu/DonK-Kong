@@ -11,7 +11,7 @@ public class Player extends Actor
     public Player()
     {
         GreenfootImage image = getImage();
-        image.scale(image.getWidth()/2, image.getHeight()/2);
+        image.scale(image.getWidth()/4, image.getHeight()/4);
         setImage(image);
     }
     /**
@@ -42,6 +42,6 @@ public class Player extends Actor
             }
         }
         
-        setLocation(posX, posY - 100);
+        setLocation(posX, posY - 45);
     }
 }
