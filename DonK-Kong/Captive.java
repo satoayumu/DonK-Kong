@@ -15,7 +15,7 @@ public class Captive extends Actor
     public Captive()
     {
         GreenfootImage image = getImage();
-        image.scale(image.getWidth()/2, image.getHeight()/2);
+        image.scale((int)(image.getWidth()/4), (int)(image.getHeight()/4));
         setImage(image);
     }
     public void act() 

@@ -16,7 +16,7 @@ public class Thrown_object extends Actor
      */public Thrown_object()
     {
         GreenfootImage image = getImage();
-        image.scale(image.getWidth() - 320, image.getHeight() - 320);
+        image.scale(image.getWidth()/7, image.getHeight()/7);
         setImage(image);
     }
     
