@@ -15,7 +15,7 @@ public class gorilla extends Actor
     public gorilla()
     {
         GreenfootImage image = getImage();
-        image.scale(image.getWidth()/2, image.getHeight()/2);
+        image.scale(image.getWidth(), image.getHeight());
         setImage(image);
     }
     public void act() 

@@ -11,7 +11,7 @@ public class Player extends Actor
     public Player()
     {
         GreenfootImage image = getImage();
-        image.scale(image.getWidth()/2, image.getHeight()/2);
+        image.scale(image.getWidth()/4, image.getHeight()/4);
         setImage(image);
     }
     /**
@@ -19,18 +19,19 @@ public class Player extends Actor
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     
+    Actor foot;
     int upVec = 0;
     boolean jumped = true;
     public void act() 
     {
-        // Add your action code here.
-        int x = getX();
-        int y = getY();
+        if(foot == null){
+            foot = getObjectsInRange(1000,PlayerFoot.class).get(0);
+        }
+        
+        int posX = foot.getX();
+        int posY = foot.getY();
         
         Actor throuwn = getOneObjectAtOffset( 0, 0, Thrown_object.class );
-        Actor scaffold = getOneObjectAtOffset( 0, 0, Scaffold.class );
-        
-        int position[] = {x , y};
         
         if(throuwn != null){
             String name = throuwn.getClass().getName();
@@ -40,33 +41,7 @@ public class Player extends Actor
             if(name == "Poison_Apple"){
             }
         }
-        if(scaffold != null){
-            String name = scaffold.getClass().getName();
-            int yPos = scaffold.getY();
-            getWorld().showText( name, 100, 50 );
-            upVec = 0;
-            position[1] = yPos;
-            jumped = false;
-        }
         
-        upVec++;
-        if( Greenfoot.isKeyDown( "up" ) && !jumped){
-           upVec = -20;
-           jumped = true;
-        }
-        position[1] += upVec;
-        if( Greenfoot.isKeyDown( "left" ) ){
-           position[0] -= 3;
-        }
-        if( Greenfoot.isKeyDown( "right" ) ){
-           position[0] += 3;
-        }
-        if( y > 600){
-           upVec = 0;
-           position[1] = 600;
-           jumped = false;
-        }
-        
-        setLocation(position[0], position[1]);
+        setLocation(posX, posY - 45);
     }
 }
