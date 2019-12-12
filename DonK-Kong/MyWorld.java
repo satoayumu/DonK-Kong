@@ -16,14 +16,14 @@ public class MyWorld extends World
     public MyWorld()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(1200, 800, 1); 
+        super(1200, 800, 1);
         for(int i=0;i<15;i++){
             addObject( new Scaffold(), 100+ (i*73), 750 );
         }
         for(int i=0;i<12;i++){
             addObject( new Scaffold(), 100+73*2+ (i*73), 550 );
         }
-        for(int i=0;i<4;i++){
+        for(int i=0;i<5;i++){
             addObject( new Scaffold(), 100+ (i*73), 350 );
         }
         for(int i=0;i<9;i++){
@@ -34,5 +34,12 @@ public class MyWorld extends World
         }
         addObject( new Player(), 150, 690 );
         addObject( new PlayerFoot(), 150, 740 );
+        addObject( new Ladder(), 950, 640 );
+        addObject( new Ladder(), 250, 440 );
+        addObject( new Ladder(), 900, 240 );
+        addObject( new Captive(), 150, 90 );
+        addObject( new gorilla(), 250, 70);
+        
+        
     }
 }
