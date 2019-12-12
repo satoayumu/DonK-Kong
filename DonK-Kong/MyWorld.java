@@ -13,10 +13,12 @@ public class MyWorld extends World
      * Constructor for objects of class MyWorld.
      * 
      */
+    private int time = 4000;
     public MyWorld()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(1200, 800, 1);
+        
         for(int i=0;i<15;i++){
             addObject( new Scaffold(), 100+ (i*73), 750 );
         }
@@ -39,7 +41,12 @@ public class MyWorld extends World
         addObject( new Ladder(), 900, 240 );
         addObject( new Captive(), 150, 90 );
         addObject( new gorilla(), 250, 70);
-        
+        showText( "time: " + String.valueOf(time), 1100, 50 );
         
     }
+    public void act() 
+    {
+       if(time>0) time--;
+       showText( "time: " + String.valueOf(time), 1100, 50 );// Add your action code here.
+    } 
 }
