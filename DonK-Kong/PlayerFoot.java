@@ -1,4 +1,5 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import java.util.Random;
 
 /**
  * Write a description of class Player_Foot here.
@@ -8,10 +9,17 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class PlayerFoot extends Actor
 {
+    Actor obj;
     int upVec = 0;
     boolean jumped = true;
     public void act() 
     {
+        if(obj == null){
+            Random rand = new Random();
+            int n = rand.nextInt(2);
+            obj = new Player();
+            getWorld().addObject( obj, getX(), getY() - 45 );
+        }
         int x = getX();
         int y = getY();
         
@@ -50,5 +58,6 @@ public class PlayerFoot extends Actor
         }
         
         setLocation(position[0], position[1]);
+        obj.setLocation(position[0], position[1]-45);
     }    
 }
