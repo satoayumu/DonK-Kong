@@ -19,18 +19,10 @@ public class Player extends Actor
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     
-    Actor foot;
     int upVec = 0;
     boolean jumped = true;
     public void act() 
     {
-        if(foot == null){
-            foot = getObjectsInRange(1000,PlayerFoot.class).get(0);
-        }
-        
-        int posX = foot.getX();
-        int posY = foot.getY();
-        
         Actor throuwn = getOneObjectAtOffset( 0, 0, Thrown_object.class );
         
         if(throuwn != null){
@@ -41,7 +33,5 @@ public class Player extends Actor
             if(name == "Poison_Apple"){
             }
         }
-        
-        setLocation(posX, posY - 45);
     }
 }

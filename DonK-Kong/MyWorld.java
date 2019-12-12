@@ -31,10 +31,9 @@ public class MyWorld extends World
         for(int i=0;i<9;i++){
             addObject( new Scaffold(), 100 + 73*6+ (i*73), 350 );
         }
-         for(int i=0;i<13;i++){
+        for(int i=0;i<13;i++){
             addObject( new Scaffold(), 100+ (i*73), 150 );
         }
-        addObject( new Player(), 150, 690 );
         addObject( new PlayerFoot(), 150, 740 );
         addObject( new Ladder(), 950, 640 );
         addObject( new Ladder(), 250, 440 );
