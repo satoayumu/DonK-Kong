@@ -14,5 +14,5 @@
   > - サイバーゴリッラ:世界中の女性をさらう悪い奴。女に飢えている。  
       <img src="gorilla.png" width="10%">  
 ## 3.ゲーム内容
-  > - プレイ画面  
+   > - プレイ画面  
       <img src="game_display.png" width="40%">
