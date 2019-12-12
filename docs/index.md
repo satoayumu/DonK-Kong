@@ -8,5 +8,5 @@
 
 ## 2.登場キャラクター
   > -サイバー配管工(♂)
-  　![サイバー配管工(♂)](./docs/sybermario(male).png"サイバー配管工(♂)")
-    ![サイバー配管工(♀)](./docs/sybermario(female).png"サイバー配管工(♂)")
+  　![サイバー配管工(♂)](./sybermario(male).png"サイバー配管工(♂)")
+    ![サイバー配管工(♀)](./sybermario(female).png"サイバー配管工(♂)")
