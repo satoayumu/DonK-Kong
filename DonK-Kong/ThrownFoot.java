@@ -17,8 +17,10 @@ public class ThrownFoot extends Actor
     {
         if(obj == null){
             Random rand = new Random();
-            int n = rand.nextInt(2);
-            obj = (n == 0) ? new Apple() : new Poison_apple();
+            if(rand.nextInt(5) == 0)
+                obj = new Apple();
+            else
+                obj = new Poison_apple();
             getWorld().addObject( obj, getX(), getY() - 20 );
         }
         int x = getX();

@@ -1,5 +1,5 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-
+import java.util.Random;
 /**
  * Write a description of class gorilla here.
  * 
@@ -18,8 +18,20 @@ public class gorilla extends Actor
         image.scale(image.getWidth(), image.getHeight());
         setImage(image);
     }
+    int count = 0;
+    int prob = 0;
     public void act() 
     {
-        // Add your action code here.
+        Random rand = new Random();
+        count++;
+        if(count >= 50){
+            if(rand.nextInt(7) <= prob){
+                getWorld().addObject( new ThrownFoot(), getX(), getY());
+                prob = -1;
+            }
+            else
+                prob++;
+            count = 0;
+        }
     }    
 }

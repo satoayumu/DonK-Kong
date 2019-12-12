@@ -19,19 +19,25 @@ public class Player extends Actor
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     
-    int upVec = 0;
-    boolean jumped = true;
+    int HP = 3;
     public void act() 
     {
         Actor throuwn = getOneObjectAtOffset( 0, 0, Thrown_object.class );
+        Actor gorilla = getOneObjectAtOffset( 0, 0, gorilla.class );
         
         if(throuwn != null){
             String name = throuwn.getClass().getName();
-            getWorld().showText( name, 100, 50 );
             if(name == "Apple"){
+                HP++;
             }
-            if(name == "Poison_Apple"){
+            if(name == "Poison_apple"){
+                HP--;
             }
         }
+        if(gorilla != null){
+            //ゲームクリアの処理
+        }
+        
+        getWorld().showText( "HP:" + HP, 100, 50 );
     }
 }
