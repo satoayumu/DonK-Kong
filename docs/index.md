@@ -10,7 +10,7 @@
   > - サイバー配管工(♂):サイバー配管工の♂の姿、見た目だけでメスと変わらない。  
       <img src="sybermario_male.png" width="10%">
   > - サイバー配管工(♀):サイバー配管工の♀の姿。  
-      <img src="sybermario_female.png" width="10%">
+      <img src="sybermario_female.png" width="10%">  
   > - サイバーゴリッラ:世界中の女性をさらう悪い奴。女に飢えている。  
       <img src="gorilla.png" width="10%">  
 ## 3.ゲーム内容
