@@ -20,6 +20,17 @@ public class Captive extends Actor
     }
     public void act() 
     {
-        // Add your action code here.
+        if( Greenfoot.isKeyDown( "g" ) ){
+            setImage("images/yumekawaboy.png");
+            GreenfootImage image = getImage();
+            image.scale(image.getWidth()/4, image.getHeight()/4);
+            setImage(image);
+        }
+        if( Greenfoot.isKeyDown( "l" ) ){
+            setImage("images/yumekawagirl.png");
+            GreenfootImage image = getImage();
+            image.scale(image.getWidth()/4, image.getHeight()/4);
+            setImage(image);
+        }
     }    
 }

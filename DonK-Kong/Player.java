@@ -37,6 +37,18 @@ public class Player extends Actor
         if(gorilla != null){
             //ゲームクリアの処理
         }
+        if( Greenfoot.isKeyDown( "m" ) ){
+            setImage("images/sybermario(male).png");
+            GreenfootImage image = getImage();
+            image.scale(image.getWidth()/4, image.getHeight()/4);
+            setImage(image);
+        }
+        if( Greenfoot.isKeyDown( "f" ) ){
+            setImage("images/sybermario(female).png");
+            GreenfootImage image = getImage();
+            image.scale(image.getWidth()/4, image.getHeight()/4);
+            setImage(image);
+        }
         
         getWorld().showText( "HP:" + HP, 100, 50 );
     }
