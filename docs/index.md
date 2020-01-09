@@ -36,7 +36,7 @@
 #### 開発者
    > - <span style="font-size: 50%">ディレクター：佐藤歩夢</span>  
    > - <span style="font-size: 50%">企画：佐藤歩夢</span>  
-   > - <span style="font-size: 50%">プログラム：佐藤拓実,神原早紀</span></span>  
+   > - <span style="font-size: 50%">プログラム：佐藤拓実,神原早紀</span>
    > - <span style="font-size: 50%">マニュアル作成：佐藤歩夢</span>  
        
        
