@@ -12,6 +12,7 @@ public class PlayerFoot extends Actor
     Actor obj;
     int upVec = 0;
     boolean jumped = true;
+    int last_ground_pos[] = {0 , 0};
     public void act() 
     {
         if(obj == null){
@@ -42,6 +43,7 @@ public class PlayerFoot extends Actor
                 upVec = 0;
                 position[1] = yPos - 10;
                 jumped = false;
+                last_ground_pos = new int[]{x, y};
             }
             upVec++;
             if( Greenfoot.isKeyDown( "up" ) && !jumped){
@@ -56,7 +58,9 @@ public class PlayerFoot extends Actor
         if( Greenfoot.isKeyDown( "right" ) ){
            position[0] += 3;
         }
-        
+        if(position[1] >= 790){
+            position = last_ground_pos;
+        }
         setLocation(position[0], position[1]);
         obj.setLocation(position[0], position[1]-45);
     }    

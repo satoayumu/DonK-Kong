@@ -10,6 +10,7 @@ public class Player extends Actor
 {
     public Player()
     {
+        setImage(WorldTitle.PlayerSkin);
         GreenfootImage image = getImage();
         image.scale(image.getWidth()/4, image.getHeight()/4);
         setImage(image);

@@ -11,6 +11,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class WorldTitle extends World
 {
 
+    static public String PlayerSkin = "images/sybermario(male).png";
+    static public String CaptiveSkin = "images/yumekawagirl.png";
     /**
      * Constructor for objects of class WorldTitle.
      * 
@@ -19,11 +21,13 @@ public class WorldTitle extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(1200, 800, 1); 
+        
+        addObject( new ChangePlayerSkin(), 400, 600 );
+        addObject( new ChangeCaptiveSkin(), 800, 600 );
     }
     public void act(){
         GreenfootImage gg = new GreenfootImage("DonK-Kong", 200, Color.WHITE, new Color(0, 0, 0, 0));
         getBackground().drawImage(gg, (getWidth()-gg.getWidth())/2, 200);
-
 
         if( Greenfoot.isKeyDown( "space" ) ){
             World game = new MyWorld();
