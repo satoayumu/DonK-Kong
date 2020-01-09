@@ -30,11 +30,13 @@
        - ↑キーでジャンプ  
    > - クリア画面  
        <img src="" width="%"> 
+   > - ゲームオーバー画面  
+       <img src="" width="%">
 
 #### 開発者
-   > - ディレクター：佐藤歩夢  
-   > - 企画：佐藤歩夢  
-   > - プログラム：佐藤拓実,神原早紀  
-   > - マニュアル作成：佐藤歩夢  
+   > - <span style="font-size: 50%">ディレクター：佐藤歩夢</span>  
+   > - <span style="font-size: 50%">企画：佐藤歩夢</span>  
+   > - <span style="font-size: 50%">プログラム：佐藤拓実,神原早紀</span></span>  
+   > - <span style="font-size: 50%">マニュアル作成：佐藤歩夢</span>  
        
        
