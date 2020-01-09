@@ -8,4 +8,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Apple extends Thrown_object
 {
+    public Apple(ThrownFoot foot){
+        super(foot);
+        damage = -1;
+    }
 }

@@ -22,20 +22,18 @@ public class Player extends Actor
     int HP = 3;
     public void act() 
     {
-        Actor throuwn = getOneObjectAtOffset( 0, 0, Thrown_object.class );
+        Thrown_object thrown = (Thrown_object)getOneObjectAtOffset( 0, 0, Thrown_object.class );
         Actor gorilla = getOneObjectAtOffset( 0, 0, gorilla.class );
         
-        if(throuwn != null){
-            String name = throuwn.getClass().getName();
-            if(name == "Apple"){
-                HP++;
-            }
-            if(name == "Poison_apple"){
-                HP--;
-            }
+        if(thrown != null){
+            HP -= thrown.GetDamage();
+            thrown.Remove();
         }
         if(gorilla != null){
             //ゲームクリアの処理
+        }
+        if(HP <= 0){
+            //ゲームオーバーの処理
         }
         if( Greenfoot.isKeyDown( "m" ) ){
             setImage("images/sybermario(male).png");
