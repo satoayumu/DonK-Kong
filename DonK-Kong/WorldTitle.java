@@ -21,9 +21,11 @@ public class WorldTitle extends World
         super(1200, 800, 1); 
     }
     public void act(){
-        GreenfootImage gg = new GreenfootImage("DonK-Kong", 200, Color.WHITE, new Color(0, 0, 0, 0));
-        getBackground().drawImage(gg, (getWidth()-gg.getWidth())/2, 200);
+        GreenfootImage title = new GreenfootImage("DonK-Kong", 200, Color.WHITE, new Color(0, 0, 0, 0));
+        getBackground().drawImage(title, (getWidth()-title.getWidth())/2, 200);
 
+        GreenfootImage description = new GreenfootImage("spaceでゲームスタート!", 50, Color.WHITE, new Color(0, 0, 0, 0));
+        getBackground().drawImage(description, (getWidth()-description.getWidth())/2, 450);
 
         if( Greenfoot.isKeyDown( "space" ) ){
             World game = new MyWorld();
