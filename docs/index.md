@@ -15,7 +15,7 @@
 
 ## 3.ゲーム内容
    > - スタート画面  
-      <img src="" width="40%">
+      <img src="start.PNG" width="40%">
    > - プレイ画面  
       <img src="game_display.png" width="40%">
    >> - Fボタン:サイバー配管工(♀)  
