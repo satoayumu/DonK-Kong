@@ -31,7 +31,7 @@
        - ←→キーで横移動  
        - ↑キーでジャンプ  
    > - クリア画面  
-       <img src="" width="%"> 
+       <img src="clear.PNG" width="40%"> 
    > - ゲームオーバー画面  
        <img src="" width="%">
    > - スコア  
