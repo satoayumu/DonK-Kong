@@ -20,7 +20,7 @@ public class Player extends Actor
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     
-    int HP = 3;
+    public static int HP = 3;
     public void act() 
     {
         Thrown_object thrown = (Thrown_object)getOneObjectAtOffset( 0, 0, Thrown_object.class );
