@@ -34,6 +34,8 @@ public class Player extends Actor
             //ゲームクリアの処理
         }
         if(HP <= 0){
+            World game = new WorldGameOver();
+            Greenfoot.setWorld( game );
             //ゲームオーバーの処理
         }
         if( Greenfoot.isKeyDown( "m" ) ){

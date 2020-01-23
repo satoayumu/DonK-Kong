@@ -46,6 +46,11 @@ public class MyWorld extends World
     public void act() 
     {
        if(time>0) time--;
+       else if(time == 0){
+            World game = new WorldGameOver();
+            Greenfoot.setWorld( game );
+        
+        }
        showText( "time: " + String.valueOf(time), 1100, 50 );// Add your action code here.
     } 
 }
