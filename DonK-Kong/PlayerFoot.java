@@ -24,7 +24,7 @@ public class PlayerFoot extends Actor
         int x = getX();
         int y = getY();
         
-        Actor scaffold = getOneObjectAtOffset( 0, 0, Scaffold.class );
+        Scaffold scaffold = (Scaffold)getOneObjectAtOffset( 0, 0, Scaffold.class );
         Actor ladder = getOneObjectAtOffset( 0, 0, Ladder.class );
         
         int position[] = {x , y};
@@ -44,6 +44,7 @@ public class PlayerFoot extends Actor
                 position[1] = yPos - 10;
                 jumped = false;
                 last_ground_pos = new int[]{x, y};
+                scaffold.Touch();
             }
             upVec++;
             if( Greenfoot.isKeyDown( "up" ) && !jumped){
