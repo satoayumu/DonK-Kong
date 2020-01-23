@@ -15,7 +15,7 @@
 
 ## 3.ゲーム内容
    > - スタート画面  
-      <img src="" width="40%">
+      <img src="start.PNG" width="40%">
    > - プレイ画面  
       <img src="game_display.png" width="40%">
    >> - Fボタン:サイバー配管工(♀)  
@@ -31,9 +31,11 @@
        - ←→キーで横移動  
        - ↑キーでジャンプ  
    > - クリア画面  
-       <img src="" width="%"> 
+       <img src="clear.PNG" width="40%"> 
    > - ゲームオーバー画面  
        <img src="" width="%">
+   > - スコア  
+   >> - time+ライフ×1000になる。
 
 #### 開発者
    > - <span style="font-size: 50%">ディレクター：佐藤歩夢</span>  
