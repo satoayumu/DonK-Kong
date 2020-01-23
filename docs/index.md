@@ -34,6 +34,8 @@
        <img src="" width="%"> 
    > - ゲームオーバー画面  
        <img src="" width="%">
+   > - スコア  
+   >> - time+ライフ×1000になる。
 
 #### 開発者
    > - <span style="font-size: 50%">ディレクター：佐藤歩夢</span>  
