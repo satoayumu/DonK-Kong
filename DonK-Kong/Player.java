@@ -32,6 +32,8 @@ public class Player extends Actor
         }
         if(gorilla != null){
             //ゲームクリアの処理
+            World game = new WorldGameClear();
+            Greenfoot.setWorld( game );
         }
         if(HP <= 0){
             World game = new WorldGameOver();
