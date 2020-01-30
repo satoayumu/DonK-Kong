@@ -17,7 +17,8 @@ public class MyWorld2 extends World
     public MyWorld2()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(1200, 800, 1); 
+        super(1200, 800, 1);
+        time = 4000;
         for(int i=0;i<15;i++){
             addObject( new Scaffold(), 100+ (i*73), 750 );
         }
