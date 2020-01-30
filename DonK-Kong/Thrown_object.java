@@ -10,6 +10,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 public class Thrown_object extends Actor
 {
+    Object[] objs;
     ThrownFoot parent;
     int damage = 0;
     /**
@@ -22,6 +23,7 @@ public class Thrown_object extends Actor
         image.scale(image.getWidth()/7, image.getHeight()/7);
         setImage(image);
         parent = foot;
+        
     }
     public void Remove(){
             getWorld().removeObject(parent);

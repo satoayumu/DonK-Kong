@@ -8,19 +8,20 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 */
 public class Player extends Actor
 {
+    public static int HP = 3;
     public Player()
     {
         setImage(WorldTitle.PlayerSkin);
         GreenfootImage image = getImage();
         image.scale(image.getWidth()/4, image.getHeight()/4);
         setImage(image);
+        HP = 3;        
     }
     /**
      * Act - do whatever the Player wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     
-    public static int HP = 3;
     public void act() 
     {
         Thrown_object thrown = (Thrown_object)getOneObjectAtOffset( 0, 0, Thrown_object.class );
