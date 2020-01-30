@@ -18,6 +18,7 @@
       <img src="start.PNG" width="40%">
    > - プレイ画面  
       <img src="game_display.png" width="40%">
+   >> - 全２ステージ  
    >> - Fボタン:サイバー配管工(♀)  
         Mボタン:サイバー配管工(♂)  
         に切り替えられる。
