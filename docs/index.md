@@ -18,6 +18,7 @@
       <img src="start.PNG" width="40%">
    > - プレイ画面  
       <img src="game_display.png" width="40%">
+   >> - 全２ステージ  
    >> - Fボタン:サイバー配管工(♀)  
         Mボタン:サイバー配管工(♂)  
         に切り替えられる。
@@ -31,9 +32,11 @@
        - ←→キーで横移動  
        - ↑キーでジャンプ  
    > - クリア画面  
-       <img src="" width="%"> 
+       <img src="clear.PNG" width="40%"> 
    > - ゲームオーバー画面  
-       <img src="" width="%">
+       <img src="end.PNG" width="40%">
+   > - スコア  
+   >> - time+ライフ×1000になる。
 
 #### 開発者
    > - <span style="font-size: 50%">ディレクター：佐藤歩夢</span>  

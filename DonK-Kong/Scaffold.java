@@ -7,7 +7,9 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @version (a version number or a date)
  */
 public class Scaffold extends Actor
-{   public Scaffold()
+{   
+    protected boolean touch = false;
+    public Scaffold()
     {
         GreenfootImage image = getImage();
         image.scale(image.getWidth()/2, image.getHeight()/2);
@@ -17,8 +19,7 @@ public class Scaffold extends Actor
      * Act - do whatever the Scaffold wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    public void act() 
-    {
-        // Add your action code here.
-    }    
+    public void Touch(){
+        touch = true;
+    }
 }
