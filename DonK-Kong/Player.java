@@ -8,12 +8,14 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 */
 public class Player extends Actor
 {
+    public static int stage_count = 0;
     public Player()
     {
         setImage(WorldTitle.PlayerSkin);
         GreenfootImage image = getImage();
         image.scale(image.getWidth()/4, image.getHeight()/4);
         setImage(image);
+        
     }
     /**
      * Act - do whatever the Player wants to do. This method is called whenever
@@ -32,8 +34,14 @@ public class Player extends Actor
         }
         if(gorilla != null){
             //ゲームクリアの処理
-            World game = new WorldGameClear();
-            Greenfoot.setWorld( game );
+            if(stage_count == 0){
+                stage_count++;
+                World game = new MyWorld2();
+                Greenfoot.setWorld( game );
+            }else if(stage_count ==1){
+                World game = new WorldGameClear();
+                Greenfoot.setWorld( game );
+            }
         }
         if(HP <= 0){
             World game = new WorldGameOver();
