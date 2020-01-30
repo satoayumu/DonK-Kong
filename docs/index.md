@@ -16,8 +16,11 @@
 ## 3.ゲーム内容
    > - スタート画面  
       <img src="start.PNG" width="40%">
-   > - プレイ画面  
+   > - プレイ画面 
+   >> - 1ステージ  
       <img src="game_display.png" width="40%">
+   >> - 2ステージ  
+      <img src="game_display2.png" width="40%">
    >> - 全２ステージ  
    >> - Fボタン:サイバー配管工(♀)  
         Mボタン:サイバー配管工(♂)  
