@@ -8,7 +8,9 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 */
 public class Player extends Actor
 {
+    public static int stage_count = 0;
     public static int HP = 3;
+    public static int clear_HP1 = 0;
     public Player()
     {
         setImage(WorldTitle.PlayerSkin);
@@ -33,8 +35,15 @@ public class Player extends Actor
         }
         if(gorilla != null){
             //ゲームクリアの処理
-            World game = new WorldGameClear();
-            Greenfoot.setWorld( game );
+            if(stage_count == 0){
+                stage_count++;
+                clear_HP1 = HP;
+                World game = new MyWorld2();
+                Greenfoot.setWorld( game );
+            }else if(stage_count ==1){
+                World game = new WorldGameClear();
+                Greenfoot.setWorld( game );
+            }
         }
         if(HP <= 0){
             World game = new WorldGameOver();

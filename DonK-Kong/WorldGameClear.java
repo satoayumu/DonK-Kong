@@ -21,7 +21,8 @@ public class WorldGameClear extends World
     public void act(){
         int clear_time = MyWorld.time;
         int life = Player.HP;
-        int anser = clear_time + life * 1000;
+        int anser = MyWorld.time + MyWorld2.time + life * 1000 + Player.clear_HP1 * 1000;
+        Player.stage_count = 0;
         GreenfootImage gg = new GreenfootImage("Game Clear", 200, Color.BLACK, new Color(0, 0, 0, 0));
         getBackground().drawImage(gg, (getWidth()-gg.getWidth())/2, 200);
         
