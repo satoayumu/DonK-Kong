@@ -48,6 +48,16 @@ public class MyWorld2 extends World
         addObject( new Captive(), 150, 90 );
         addObject( new gorilla(), 250, 70);
     }
+    public void act() 
+    {
+       if(time>0) time--;
+       else if(time == 0){
+            World game = new WorldGameOver();
+            Greenfoot.setWorld( game );
+        
+        }
+       showText( "time: " + String.valueOf(time), 1100, 50 );// Add your action code here.
+    } 
     
     
 }

@@ -10,6 +10,7 @@ public class Player extends Actor
 {
     public static int stage_count = 0;
     public static int HP = 3;
+    public static int clear_HP1 = 0;
     public Player()
     {
         setImage(WorldTitle.PlayerSkin);
@@ -37,6 +38,7 @@ public class Player extends Actor
             //ゲームクリアの処理
             if(stage_count == 0){
                 stage_count++;
+                clear_HP1 = HP;
                 World game = new MyWorld2();
                 Greenfoot.setWorld( game );
             }else if(stage_count ==1){
