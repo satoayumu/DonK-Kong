@@ -33,7 +33,7 @@
    > - クリア画面  
        <img src="clear.PNG" width="40%"> 
    > - ゲームオーバー画面  
-       <img src="" width="%">
+       <img src="end.PNG" width="40%">
    > - スコア  
    >> - time+ライフ×1000になる。
 
