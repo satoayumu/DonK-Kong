@@ -13,6 +13,8 @@ public class ThrownFoot extends Actor
     int moveVec = 0;
     int angle = 0;
     int isGround = 0;
+    int pre_posY = 0;
+        
     public void act() 
     {
         if(obj == null){
@@ -38,11 +40,12 @@ public class ThrownFoot extends Actor
             upVec = 0;
             position[1] = yPos - 10;
             isGround = 1;
-            if(pre_isGround != isGround){
-                if(moveVec == 0)
-                    moveVec = -1;
+            if(moveVec == 0)
+                moveVec = -1;
+            if(pre_isGround != isGround && yPos - pre_posY > 100){
                 moveVec *= -1;
             }
+            pre_posY = yPos;
         }
         else{
             isGround = 0;

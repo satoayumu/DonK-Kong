@@ -15,7 +15,7 @@ public class Player extends Actor
         GreenfootImage image = getImage();
         image.scale(image.getWidth()/4, image.getHeight()/4);
         setImage(image);
-        HP = 3;        
+        HP = 3;
     }
     /**
      * Act - do whatever the Player wants to do. This method is called whenever
