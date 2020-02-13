@@ -1,3 +1,4 @@
+
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
@@ -48,6 +49,20 @@ public class MyWorld2 extends World
         addObject( new Ladder(), 1100, 400 );
         addObject( new Captive(), 150, 90 );
         addObject( new gorilla(), 250, 70);
+        
+        addObject(new Oki_Apple(), 450, 500);
+        addObject(new Oki_Apple(), 450, 400);
+        addObject(new Oki_Apple(), 500, 400);
+        addObject(new Oki_Apple(), 550, 400);
+        addObject(new Oki_Apple(), 600, 400);
+        addObject(new Oki_Apple(), 550, 450);
+        addObject(new Oki_Apple(), 600, 450);
+        addObject(new Oki_Apple(), 550, 550);
+        addObject(new Oki_Apple(), 600, 550);
+        addObject(new Oki_Apple(), 650, 550);
+        addObject(new Oki_Apple(), 700, 550);
+        addObject(new Oki_Apple(), 700, 450);
+        addObject(new Oki_Apple(), 700, 500);
     }
     public void act() 
     {
