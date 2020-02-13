@@ -34,7 +34,6 @@ public class MyWorld2 extends World
         for(int i=0;i<5;i++){
             addObject( new Scaffold(), 800+ (i*73), 300 );
         }
-        addObject( new PlayerFoot(), 150, 740 );
         for(int i=0;i<5;i++){
             addObject( new Scaffold(), 800+ (i*73), 450 );
         }
@@ -50,6 +49,10 @@ public class MyWorld2 extends World
         addObject( new Captive(), 150, 90 );
         addObject( new gorilla(), 250, 70);
         
+        addObject(new Oki_Apple(), 450, 350);
+        addObject(new Oki_Apple(), 500, 350);
+        addObject(new Oki_Apple(), 550, 350);
+        addObject(new Oki_Apple(), 600, 350);
         addObject(new Oki_Apple(), 450, 500);
         addObject(new Oki_Apple(), 450, 400);
         addObject(new Oki_Apple(), 500, 400);
